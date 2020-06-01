@@ -7,6 +7,7 @@
 //
 
 import SwiftUI
+//from mac mini
 
 class EmojiMemoryGame : ObservableObject{
     @Published private var memoryGame : MemoryGame<String> = createMemoryGame()//Model
@@ -22,6 +23,7 @@ class EmojiMemoryGame : ObservableObject{
     }
     func chooseCard(card : MemoryGame<String>.Card){
         memoryGame.choose(card : card)
+        print("dsf")
     }
 }
 
